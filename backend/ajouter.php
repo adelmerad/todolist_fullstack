@@ -4,7 +4,7 @@ use Dom\Text;
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
 
-require_once 'config.php';
+require_once __DIR__ . '/config.php'; // Chemin absolu
 $con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
